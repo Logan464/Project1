@@ -1,12 +1,6 @@
 import { people } from '/data/people.js'
 import { planets} from '/data/planets.js'
 
-const men = people.filter(person => person.gender === 'male')
-const women = people.filter(person => person.gender === 'female')
-const men = people.filter(person => (person.gender === 'n/a')||(person.gender === 'hermaphrodite') || (person.gender === 'none'))
-
-
-
 const allHomeWorlds = people.map(person => {
 let foundWorld = planets.find(planet=> {
 return planet.url === person.homeworld
