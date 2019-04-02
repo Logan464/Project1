@@ -16,10 +16,15 @@ let caption = document.createElement('figcaption')
 let image = document.createElement('img')
 
 let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
-title.textContent = pokeData.name
-Image.src = pokeData.sprites.front_shiny
-card.appendChild(title)
-card.appendChild(image)
+caption.textContent = pokeData.name
+if(pokeData.id !==0) {
+Image.src = `../images/${pokeData.imageID}${pokeData.name}.png` } else {
+image.src =`../images/pokeball.png`
+}
+
+figure.appendChild(image)
+figure.appendChild(caption)
+card.appendChild(figure)
 mainContainer.appendChild(card)
 }
 
