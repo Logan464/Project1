@@ -8,6 +8,14 @@ this.id = id
 
 const mainContainer =document.querySelector('.container')
 
+function cardFront(pokeData){
+let cardFront = document.createElement('div')
+cardFront.className = 'card_face'
+let figure = document.createElement('figure')
+let caption = document.createElement('figcaption')
+let image = document.createElement('img')
+
+
 function createPokeCard(pokeData){
 let card = document.createElement('div')
 card.className ='box'
