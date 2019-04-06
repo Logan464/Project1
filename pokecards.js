@@ -15,6 +15,12 @@ let figure = document.createElement('figure')
 let caption = document.createElement('figcaption')
 let image = document.createElement('img')
 
+caption.textContent = pokeData.name
+if(pokeData.id !==0) {
+    image.src = `../images/${pokeData.imageID}${pokeData.name}.png`
+} else {
+    image.src =`../images/pokeball.png`
+}
 
 function createPokeCard(pokeData){
 let card = document.createElement('div')
