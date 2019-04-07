@@ -16,18 +16,64 @@ let caption = document.createElement('figcaption')
 let image = document.createElement('img')
 
 caption.textContent = pokeData.name
-if(pokeData.id !==0) {
+if(pokeData.id !== 0) {
     image.src = `../images/${pokeData.imageID}${pokeData.name}.png`
 } else {
     image.src =`../images/pokeball.png`
 }
 
+figure.appendChild(image)
+figure.appendChild(caption)
+card.appendChild(figure)
+cardFront.appendChild(figure)
+return cardFront
+}
+
+function cardBackInfo(pokeData) {
+let infoDiv = document.createElement('div')
+infoDiv.className ='infoDiv'
+let moveOne = document.createElement('p')
+let moveTwo = document.createElement('p')
+let moveThree = document.createElement('p')
+let moveFour = document.createElement('p')
+moveOne.textContent = pokeData.moves[0].move.name
+moveTwo.textContent = pokeData.moves[1].move.name
+moveThree.textContent = pokeData.moves[2].move.name
+moveFour.textContent = pokeData.moves[3].move.name
+infoDiv.appendChild(moveOne)
+infoDiv.appendChild(moveTwo)
+infoDiv.appendChild(moveThree)
+infoDiv.appendChild(moveFour)
+return infoDiv
+}
+
+function cardBack(pokeData) {
+let cardBack = document.createElement('div')
+let backImage = document.createElement('img')
+backImage.className = 'backImage'
+backImage.src = `../images/pokeball.png`
+cardBack.className = 'card_face card_face--back'
+cardBack.appendChild(backImage)
+cardBack.appendChild(cardBackInfo(pokeData))
+return cardBack
+}
+
 function createPokeCard(pokeData){
+let scene = document.createElement('div')
+scene.className ='scene'
 let card = document.createElement('div')
-card.className ='box'
-let figure = document.createElement('figure')
-let caption = document.createElement('figcaption')
-let image = document.createElement('img')
+card.className = 'card'
+
+card.appendChild(cardFront(pokeData))
+card.appendChild(cardBack(pokeData))
+
+card.addEventListener( 'click', function() {
+card.classList.toggle('is-flipped');
+})
+
+scene.appendChild(card)
+mainContainer.appendChild(scene)
+}
 
 let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
 caption.textContent = pokeData.name
