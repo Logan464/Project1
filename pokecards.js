@@ -75,6 +75,16 @@ scene.appendChild(card)
 mainContainer.appendChild(scene)
 }
 
+pokemon.forEach(singleMon => {
+fetch(singleMon.url)
+.then(function(response) {
+return response.json()
+})
+.then(function(mtJson) {
+createPokeCard(matchIdToImage(myJson))
+})
+})
+
 let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
 caption.textContent = pokeData.name
 if(pokeData.id !==0) {
