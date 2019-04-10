@@ -1,14 +1,8 @@
 import { pokemon } from  '../data/pokemon.js'
 
-class Pokemon {
-consturctor(id) {
-this.id = id
-}
-}
-
 const mainContainer =document.querySelector('.container')
 
-function cardFront(pokeData){
+function cardFront(pokeData) {
 let cardFront = document.createElement('div')
 cardFront.className = 'card_face'
 let figure = document.createElement('figure')
@@ -16,7 +10,7 @@ let caption = document.createElement('figcaption')
 let image = document.createElement('img')
 
 caption.textContent = pokeData.name
-if(pokeData.id !== 0) {
+if (pokeData.id !== 0) {
     image.src = `../images/${pokeData.imageID}${pokeData.name}.png`
 } else {
     image.src =`../images/pokeball.png`
@@ -24,7 +18,6 @@ if(pokeData.id !== 0) {
 
 figure.appendChild(image)
 figure.appendChild(caption)
-card.appendChild(figure)
 cardFront.appendChild(figure)
 return cardFront
 }
@@ -75,6 +68,8 @@ scene.appendChild(card)
 mainContainer.appendChild(scene)
 }
 
+const allFetchedPokemon = []
+
 pokemon.forEach(singleMon => {
 fetch(singleMon.url)
 .then(function(response) {
@@ -85,12 +80,30 @@ createPokeCard(matchIdToImage(myJson))
 })
 })
 
-let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
-caption.textContent = pokeData.name
-if(pokeData.id !==0) {
-Image.src = `../images/${pokeData.imageID}${pokeData.name}.png` } else {
-image.src =`../images/pokeball.png`
+function matchIdToImage(aPokemon) {
+if (aPokemon.id === 0) {
+aPokemon.imageID = 0
 }
+if (aPokemon.id < 10) {
+aPokemon.imageID = '00' + aPokemon.id
+}
+if (aPokemon.id > 99) {
+aPokemon.imageID = aPokemon.id
+}
+if(aPokemon.name === "mr-mime") {
+aPokemon.name = "mr. Mime"
+}
+let dash = aPokemon.name.slice(0,dash)
+}
+aPokemon.name = aPokemon.name.charAt(0).toUpperCase() + aPokemon.name.slice(1)
+return aPokemon
+}
+//let upperName = pokeData.name.charAt(0).toUpperCase() + pokeData.name.slice(1)
+//caption.textContent = pokeData.name
+//if(pokeData.id !==0) {
+//Image.src = `../images/${pokeData.imageID}${pokeData.name}.png` } else {
+//image.src =`../images/pokeball.png`
+//}
 
 figure.appendChild(image)
 figure.appendChild(caption)
@@ -114,15 +127,18 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
 return response.json()
 }
 })
+}
 .then(function(retrievedPokemon) {
+createPokeCard(matchIdToImage()
 console.log(typeof(retrievedPokemon.id))
-if(retrievedPokemon.id < 10) {
+if (retrievedPokemon.id < 10) {
 retrievedPokemon.imageID = "00" + retrievedPokemon.id
 }
 if(retrievedPokemon.id > 9 && retrievedPokemon.id < 100 ) {
 retrievedPokemon.imageID = "0" + retrievedPokemon.id
 }
 if(retrievedPokemon.id > 99) {
+
 retrievedPokemon.imageID = retrievedPokemon.id
 }
 retrievedPokemon.name =retrievedPokemon.name.charAt(0).toUpperCase() + retrievedPokemon.name.slice(1) createPokeCard(retrievedPokemon)
