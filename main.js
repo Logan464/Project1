@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { people } from '../data/people.js'
 
 const men = people.filter(person => person.gender === 'male')
@@ -18,8 +17,6 @@ mainContainer.appendChild(manElement)
 })
 
 document.body.appendChild(mainContainer)
-=======
 import { films } from './films.js'
 let titleElement = document.querySelector('title')
 let crawlElement = document.querySelector('crawl')
->>>>>>> master
