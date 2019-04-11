@@ -13,7 +13,7 @@ function cardFront(pokeData) {
   if (pokeData.id !== 0) {
     image.src = `images/${pokeData.imageID}${pokeData.name}.png`
   } else {
-    image.src = `images/pokeball.png`
+    image.src = `images/MissingNo.png`
   }
 
   figure.appendChild(image)
@@ -87,9 +87,12 @@ function matchIdToImage(aPokemon) {
   if (aPokemon.id < 10) {
     aPokemon.imageID = '00' + aPokemon.id
   }
-  if (aPokemon.id > 99) {
-    aPokemon.imageID = aPokemon.id
+  if (aPokemon.id > 9 && aPokemon.id < 100) {
+    aPokemon.imageID = '0' + aPokemon.id
   }
+if (aPokemon.id > 99) {
+aPokemon.imageID = aPokemon.id
+}
   if (aPokemon.name === 'mr-mime') {
     aPokemon.name = 'mr. Mime'
   }
@@ -119,8 +122,40 @@ function fetchSinglePokemon(id) {
       createPokeCard(matchIdToImage(retrievedPokemon))
     })
 }
-
+class Pokemon {
+constructor(name) {
+this.id= 0,
+this.name = name,
+this. moves= [
+    {
+move: {
+name: 'Water Gun',
+},
+    },
+    {
+move: {
+name: 'Water Gun',
+},
+    },
+{
+    move:{
+name: 'Sky Attack',
+},
+},
+{
+    move:{
+        name:'none',
+    },
+},
+]
+}
+}
 const newPokemonButton = document.querySelector('button')
+const missingnoButton = document.querySelector('#missingno')
+
+missingnoButton.addEventListener('click', function() {
+createPokeCard(matchIdToImage(new Pokemon('Missingno')))
+})
 
 newPokemonButton.addEventListener('click', function() {
   let pokemonID = prompt('Enter an ID of an existing pokemon:')
