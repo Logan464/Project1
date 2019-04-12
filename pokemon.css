@@ -85,3 +85,7 @@ background-color: #696664;
 color: rgb(19, 32, 216);
 }
 
+button:hover {
+  background-color: red;
+}
+
