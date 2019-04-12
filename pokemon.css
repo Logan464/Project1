@@ -19,7 +19,7 @@ perspective: 600px;
 
 .card {
 text-align: center;
-text-shadow: 3px 2px #ffffff;
+text-shadow: 0 0 3px #FF0000;
 width: 100%;
 text-color: #ffffff;
 text-opacity: .25;
