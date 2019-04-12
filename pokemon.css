@@ -20,6 +20,7 @@ perspective: 600px;
 .card {
 text-align: center;
 text-shadow: 0 0 3px #FF0000, 0 0 5px #FF4500;
+text-decoration-style: wavy;
 width: 100%;
 height: 100%;
 transition: transform 1s;
