@@ -91,5 +91,5 @@ padding: 10, 0, 10, 0;
 }
 
 button:hover {
-  box-shadow: inset 0 0 0 10px #13243D;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
