@@ -19,9 +19,9 @@ perspective: 600px;
 
 .card {
 text-align: center;
-text-shadow: 0 0 3px #FF0000;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 width: 100%;
-text-color: #FF0000;
+text-color: #FF0000, #0000FF;
 height: 100%;
 transition: transform 1s;
 transform-style: preserve-3d;
