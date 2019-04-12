@@ -22,6 +22,7 @@ text-align: center;
 text-shadow: 3px 2px #ffffff;
 width: 100%;
 text-color: #ffffff;
+text-opacity: .25;
 height: 100%;
 transition: transform 1s;
 transform-style: preserve-3d;
