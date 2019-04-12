@@ -83,6 +83,7 @@ height: 80px;
 font-size: 1.5rem;
 background-color: #696664;
 color: rgb(19, 32, 216);
+opacity: .5;
 }
 
 button:hover {
