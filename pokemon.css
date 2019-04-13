@@ -48,6 +48,7 @@ backface-visibility: hidden;
 .card__face--back {
 text-align: center;
 transform:rotateY(180deg);  
+background-image: linear-gradient(to right, #3F42B1 0%, #E81A49 100%);
 }
 
 figure {
