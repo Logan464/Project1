@@ -50,7 +50,6 @@ text-align: center;
 transform:rotateY(180deg);
 background-image: linear-gradient(to right, #335BFF 0%, #F50C3A 100%);  
 }
-}
 
 figure {
 margin: 0px;
@@ -64,7 +63,7 @@ margin: 10px;
 }
 
 img {
-padding-right: 15px;
+padding: 4px;
 width: 200px;
 height: 200px;
 }
