@@ -1,13 +1,61 @@
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 1280px;
-  }
-
-  .container div {
-    width 100px;
-  height 150px;
-  margin: 10px;
-  }
+@media only screen and (max-width: 367px) {
+  
+}
+	nav ul li {
+		width: 50%;
+		font-size: 3rem;
+   text-align: right;
+    display: flex;
+	}
+	nav ul { 
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+nav li a {
+	padding: 4% 0 4% 0;
+}
+nav a:link {
+	color: #99ccff;
+	text-decoration: none;
+}
+nav a:visited {
+	color: #FFFFFF;
+}
+nav a:hover {
+	background-color: black;
+}
+.hidden {
+	visibility: hidden;
+}
+.welcome p {
+  text-align: center; 
+}
+.welcome h1 {
+  text-align: center; 
+}
+.welcome {
+  background-color: #ccffcc; 
+  min-height: 55vh;
+  padding-top: 45vh;
+}
+.work {
+   padding-top: 60px;
+  margim-top:-60px;
+}
+.trabajo {
+  text-align: center; 
+}
+.videocontainer {
+  overflow: hidden;
+  padding-top: 2%;
+  position: relative;
+}
+.videocontainer iframe {
+   border: 0;
+   height: 80%;
+   left: 0;
+   position: center;
+   top: 0;
+}
