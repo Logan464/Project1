@@ -60,6 +60,52 @@ function createPokeCard(pokeData) {
   scene.className = 'scene'
   let card = document.createElement('div')
   card.className = 'card'
+  
+  let type = pokeData.types[0].type.name
+switch (type) {
+case 'poison':
+scene.classList.toggle('poison')
+break;
+case 'noraml':
+scene.classList.toggle('normal')
+break;
+case 'psychic':
+scene.classList.toggle('psychic')
+break;
+case 'water':
+scene.classList.toggle('water')
+break;
+case 'flying':
+scene.classList.toggle('flying')
+break;
+case 'fire':
+scene.classList.toggle('fire')
+break;
+case 'fairy':
+scene.classList.toggle('fairy')
+break;
+case 'electric':
+scene.classList.toggle('electric')
+break;
+case 'grass':
+scene.classList.toggle('grass')
+break;
+case 'ice':
+scene.classList.toggle('ice')
+break;
+case 'steel':
+scene.classList.toggle('steel')
+break;
+case 'dark':
+scene.classList.toggle('dark')
+break;
+case 'fighting':
+scene.classList.toggle('fighting')
+break;
+case 'ground':
+scene.classList.toggle('ground')
+break;
+}
 
   card.appendChild(cardFront(pokeData))
   card.appendChild(cardBack(pokeData))
