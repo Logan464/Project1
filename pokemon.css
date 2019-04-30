@@ -94,3 +94,46 @@ padding: 10, 0, 10, 0;
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.poison:hover {
+  box-shadow: 0 12px 16px 0 purple
+  }
+  .normal:hover {
+    box-shadow: 0 12px 16px brown
+    }
+    .water:hover {
+      box-shadow: 0 12px 16px 0 blue
+      }
+      .grass:hover {
+        box-shadow: 0 12px 16px 0 green
+        }
+        .flying:hover {
+          box-shadow: 0 12px 16px 0 skyblue
+          }
+          .fire:hover {
+            box-shadow: 0 12px 16px 0 red
+            }
+            .fairy:hover {
+              box-shadow: 0 12px 16px pink
+              }
+              .electric:hover {
+                box-shadow: 0 12px 16px yellow
+                }
+                .psychic:hover {
+                  box-shadow: 0 12px 16px blueviolet
+                  }
+                  .ice:hover {
+                    box-shadow: 0 12px 16px midnightblue
+                    }
+                    .steel:hover {
+                      box-shadow: 0 12px 16px grey
+                      }
+                      .dark:hover {
+                        box-shadow: 0 12px 16px black
+                        }
+                        .fighting:hover {
+                          box-shadow: 0 12px 16px 0 orangered
+                          }
+                          .ground:hover {
+                            box-shadow: 0 12px 16px 0 tomato
+                            }
