@@ -1,11 +1,15 @@
 export const pokemon = [
   {
-    name: 'mewtwo',
-    url: 'https://pokeapi.co/api/v2/pokemon/150/',
+    name: 'bulbasaur',
+    url: 'https://pokeapi.co/api/v2/pokemon/1/',
   },
   {
-    name: 'mew',
-    url: 'https://pokeapi.co/api/v2/pokemon/151/',
+    name: 'ivysaur',
+    url: 'https://pokeapi.co/api/v2/pokemon/2/',
+  },
+  {
+    name: 'venasaur',
+    url: 'https://pokeapi.co/api/v2/pokemon/3/',
   },
   {
     name: 'chikorita',
@@ -44,59 +48,63 @@ export const pokemon = [
     url: 'https://pokeapi.co/api/v2/pokemon/160/',
   },
   {
-    name: 'sentret',
-    url: 'https://pokeapi.co/api/v2/pokemon/161/',
+    name: 'charmander',
+    url: 'https://pokeapi.co/api/v2/pokemon/4/',
   },
   {
-    name: 'furret',
-    url: 'https://pokeapi.co/api/v2/pokemon/162/',
+    name: 'charmeleon',
+    url: 'https://pokeapi.co/api/v2/pokemon/5/',
   },
   {
-    name: 'hoothoot',
-    url: 'https://pokeapi.co/api/v2/pokemon/163/',
+    name: 'charizard',
+    url: 'https://pokeapi.co/api/v2/pokemon/6/',
   },
   {
-    name: 'noctowl',
-    url: 'https://pokeapi.co/api/v2/pokemon/164/',
+    name: 'squirtle',
+    url: 'https://pokeapi.co/api/v2/pokemon/7/',
   },
   {
-    name: 'ledyba',
-    url: 'https://pokeapi.co/api/v2/pokemon/165/',
+    name: 'wartortle',
+    url: 'https://pokeapi.co/api/v2/pokemon/8/',
   },
   {
-    name: 'ledian',
-    url: 'https://pokeapi.co/api/v2/pokemon/166/',
+    name: 'blastoise',
+    url: 'https://pokeapi.co/api/v2/pokemon/9/',
   },
   {
-    name: 'spinarak',
-    url: 'https://pokeapi.co/api/v2/pokemon/167/',
+    name: 'treecko',
+    url: 'https://pokeapi.co/api/v2/pokemon/252/',
   },
   {
-    name: 'ariados',
-    url: 'https://pokeapi.co/api/v2/pokemon/168/',
+    name: 'grovyle',
+    url: 'https://pokeapi.co/api/v2/pokemon/253/',
   },
   {
-    name: 'crobat',
-    url: 'https://pokeapi.co/api/v2/pokemon/169/',
+    name: 'sceptile',
+    url: 'https://pokeapi.co/api/v2/pokemon/254/',
   },
   {
-    name: 'chinchou',
-    url: 'https://pokeapi.co/api/v2/pokemon/170/',
+    name: 'torchic',
+    url: 'https://pokeapi.co/api/v2/pokemon/255/',
   },
   {
-    name: 'lanturn',
-    url: 'https://pokeapi.co/api/v2/pokemon/171/',
+    name: 'combusken',
+    url: 'https://pokeapi.co/api/v2/pokemon/256/',
   },
   {
-    name: 'pichu',
-    url: 'https://pokeapi.co/api/v2/pokemon/172/',
+    name: 'blaziken',
+    url: 'https://pokeapi.co/api/v2/pokemon/257/',
   },
   {
-    name: 'cleffa',
-    url: 'https://pokeapi.co/api/v2/pokemon/173/',
+    name: 'mudkip',
+    url: 'https://pokeapi.co/api/v2/pokemon/258/',
   },
   {
-    name: 'igglybuff',
-    url: 'https://pokeapi.co/api/v2/pokemon/174/',
+    name: 'marshtomp',
+    url: 'https://pokeapi.co/api/v2/pokemon/259/',
+  },
+  {
+    name: 'swampert',
+    url: 'https://pokeapi.co/api/v2/pokemon/260/',
   },
 ]
