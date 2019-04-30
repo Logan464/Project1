@@ -2,6 +2,10 @@ import { pokemon } from './pokemon.js'
 
 const mainContainer = document.querySelector('.container')
 
+const types = representatives.types(type => {
+  return types.type === 'poison'
+})
+
 function cardFront(pokeData) {
   let cardFront = document.createElement('div')
   cardFront.className = 'card__face'
