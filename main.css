@@ -110,9 +110,7 @@ width: 500px;
 	width: 23%;
 	height: auto;
 	margin-bottom: 4%;
+	display: flex;
+	justify-content: space-between;
 }
-.cell2 {
-	width: 23%;
-	height: auto;
-	margin-bottom: 4%;
-}
+
