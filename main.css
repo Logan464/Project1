@@ -80,3 +80,13 @@ ul#navbar2 .cell {
 	height: auto;
 	margin-bottom: 1%;
 }
+#column {
+	width: 960px;
+	height: auto;
+	background-color: #0B0B3B;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid #8A0808;
+	padding: 10px 20px 10px 20px;
+	overflow:auto;
+	}
