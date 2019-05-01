@@ -60,6 +60,9 @@ ul#navbar2 .cell {
    padding-top: 60px;
   margim-top:-60px;
 }
+.trabajo h2 {
+  text-align: center; 
+}
 .trabajo {
   text-align: center; 
 }
@@ -93,5 +96,8 @@ ul#navbar2 .cell {
   background-color: #45AE7D; 
   min-height: 55vh;
   padding-top: 45vh;
+}
+.contactar h2 {
+  text-align: center; 
 }
 
