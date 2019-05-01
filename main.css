@@ -75,3 +75,7 @@ ul#navbar2 .cell {
    position: center;
    top: 0;
 }
+.header {
+  background-color: #45AE7D; 
+  min-height: 55vh;
+  padding-top: 45vh;
