@@ -75,7 +75,8 @@ ul#navbar2 .cell {
    position: center;
    top: 0;
 }
-header {
-  height: 100px;
-width: 400px;
+#header img {
+  width: 100%;
+	height: auto;
+	margin-bottom: 1%;
 }
