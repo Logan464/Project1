@@ -66,6 +66,10 @@ ul#navbar2 .cell {
 .trabajo {
   text-align: center; 
 }
+.trabajo img {
+	height: 350px;
+	width: 350px;
+}
 .videocontainer {
   overflow: hidden;
   padding-top: 2%;
