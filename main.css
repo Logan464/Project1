@@ -27,8 +27,6 @@ ul#navbar2 .cell {
 	height: auto;
 	background-color: #1C1C1C;
 	border: .2rem solid #FFFFFF;
-	display: flex;
-	justify-content: space-between;
 }
 #navbar2 li a {
 	display: block;
@@ -110,7 +108,11 @@ width: 500px;
 	width: 23%;
 	height: auto;
 	margin-bottom: 4%;
+}
+#flexbox {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items:flex-start;
 }
 
