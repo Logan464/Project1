@@ -104,6 +104,8 @@ break;
 case 'ground':
 scene.classList.toggle('ground')
 break;
+default:
+console.log(`Doesn't have a type, just in case`)
 }
 
   card.appendChild(cardFront(pokeData))
