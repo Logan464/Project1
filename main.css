@@ -1,17 +1,17 @@
-@media only screen and (max-width: 367px) {
-  
-}
-	nav ul li {
-		width: 50%;
+@media screen and (max-width: 600px) {
+	ul#navbar li {
+		float: none;
+		width: 100%;
 		font-size: 3rem;
-   text-align: right;
-    display: flex;
 	}
-	nav ul { 
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; 
+	ul#navbar2 {
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+ul#navbar2 .cell {
+	width: 100%;
+}
+
 }
 #navbar2 {
 	list-style-type: none;
