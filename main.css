@@ -100,7 +100,10 @@ ul#navbar2 .cell {
 .contactar h2 {
   text-align: center; 
 }
-
+.contactar img {
+	height: 100px;
+	width: 100px;
+}
 .cell2 {
 	width: 23%;
 	height: auto;
