@@ -198,6 +198,12 @@ name: 'Sky Attack',
         name:'none',
     },
 },
+],
+this.types = [
+{ type: {
+name: "Bird"
+}
+}
 ]
 }
 }
