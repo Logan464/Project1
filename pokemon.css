@@ -152,6 +152,20 @@ button:hover {
 	overflow:auto;
 	}
 
+@media screen and (max-width: 600px) {
+	ul#navbar li {
+		float: none;
+		width: 100%;
+		font-size: 3rem;
+	}
+	ul#navbar2 {
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+ul#navbar2 .cell {
+	width: 100%;
+}
+
 }
 #navbar2 {
 	list-style-type: none;
@@ -181,3 +195,4 @@ button:hover {
 }
 #navbar2 a:hover {
 	background-color: black;
+}
