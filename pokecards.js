@@ -31,7 +31,7 @@ function cardBackInfo(pokeData) {
   let moveFour = document.createElement('p')
   let type = document.createElement('h2')
   type.textContent = pokeData.types[0].type.name
-  moveOne.textContent = pokeData.moves[43].move.name
+  moveOne.textContent = pokeData.moves[0].move.name
   moveTwo.textContent = pokeData.moves[1].move.name
   moveThree.textContent = pokeData.moves[2].move.name
   moveFour.textContent = pokeData.moves[3].move.name
